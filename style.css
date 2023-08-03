@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sticky {
+    position: sticky;
+    top: 10px;
+}
+
+.barra-esquerda {
+    justify-content: left;
+    text-align: center;
+    width: 70%;
+    /*height: 100vh;*/
+    background-color: #3c3c9cf7;
+    padding: 1rem;
+    color: white;
+}
+
+.barra-direita {
+    justify-content: right;
+    /*text-align: center;
+    width: 30%;
+    height: 100vh;
+    background-color: red;*/
+    padding: 1rem;
+    background: black;
+    color: white;
+}
+
+.container-foto {
+    margin: 2rem 0;
+}
+
+.foto-perfil {
+    background: aquamarine;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.caixas {
+    padding: 1.5rem;
+}
+
+.sobre-titulo{
+    margin: 1rem 0;
+}
+
+.projeto-container {
+    display: grid;
+    grid-area: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: "titulo titulo titulo"
+        "linki email whats";
+}
+
+.contato .titulo {
+    grid-area: titulo;  
+}
+
+.contato .link {
+    grid-area: linki;
+}
+
+.contato .email {
+    grid-area: email;
+}
+
+.contato .whats {
+    grid-area: whats;
+}
+
+.projeto-container .projeto-titulo {
+    text-align: center;
+    padding: 1rem;
+}
+
+.projeto-img {
+    height: 400px;
+    /*background: blue;*/
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projeto-img .img {
+    object-fit: contain;
+    max-height: 400px;
+}
+
+.projeto-sobre {
+    padding: .5rem;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-logo {
+    max-width: 80px;
+}
